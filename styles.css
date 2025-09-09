@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+
+#header{
+  position: sticky;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#header-img{
+  padding: 10px;
+  width: 50px;
+  height: auto;
+}
+
+#nav-bar{
+  padding: 10px;
+  margin-left: auto;
+}
+
+#nav-bar li{
+  display: inline-block;
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  font-weight: bold;
+}
+
+#about-product{
+  width: 100%;
+  max-width: 700px; 
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#about-product h1{
+  text-align: center;
+}
+
+#about-list li{
+  padding: 10px;
+  list-style-type: none;
+}
+
+.title-list{
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.div-video{
+  width: 100%;
+  padding: 30px;
+}
+
+#video{
+  border: none;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#form{
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px   white;
+}
+
+fieldset{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  border: none;
+  padding: 20px;
+  gap: 20px 20px; 
+  
+  }
+
+legend{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+label{
+  margin-left: 50px; 
+  cursor: pointer;
+}
+
+
+input{
+  font-size: 1.1rem;
+  justify-self: start;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: text;
+}
+
+input::placeholder{
+  font-size: 0.9rem;
+  padding-left: 5px;
+  
+}
+
+select{
+  font-size: 1.1rem;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button{
+ justify-self: center;
+ grid-column:  1 / -1;
+ background-color: black;
+ border: 1px solid white;
+ border-radius: 10px;
+ color: white;
+ padding: 5px 30px;
+ cursor: pointer;
+}
+
+.button:hover{
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+footer{
+  font-size: 0.9rem;
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid white;
+  color: white;
+  background-color: black;
+}
+
+footer li{
+  list-style-type: none;
+}
+
+footer .nav-link{
+  color: white;
+}
+
+@media screen and (max-width:580px){
+  *{
+    
+    font-size: 14px;
+  }
+
+  #form{
+    width: 75%;
+    overflow: hidden;
+  }
+
+  fieldset{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center; 
+    width: 100%;
+    gap: 10px;
+    margin: 0;
+  }
+
+ input{
+   justify-self: center;
+ }
+
+ label{
+   margin: 0;
+ }
+
+}
